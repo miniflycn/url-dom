@@ -1,0 +1,35 @@
+{
+  "name": "url-dom",
+  "version": "0.0.1",
+  "description": "A library to get a url's html content and return a cheerio Object",
+  "keywords": [
+    "DOM",
+    "url",
+    "cheerio",
+    "library"
+  ],
+  "repository": "git://github.com/miniflycn/url-dom.git",
+  "author": "Daniel Yang <miniflycn@gmail.com>",
+  "main": "index",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "connect": "*",
+    "blanket": "*",
+    "coveralls": "*",
+    "mocha-lcov-reporter": "*"
+  },
+  "dependencies": {
+    "cheerio": "*"
+  },
+  "scripts": {
+    "test": "mocha",
+    "blanket": {
+      "pattern": "url-dom/lib"
+    }
+  },
+  "license": "MIT"
+}
