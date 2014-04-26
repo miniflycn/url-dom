@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/miniflycn/url-dom.png?branch=master)](https://travis-ci.org/miniflycn/url-dom)
 # url-dom
 A library to get a url's html content and return a cheerio Object
 
