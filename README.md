@@ -2,6 +2,23 @@
 # url-dom
 A library to get a url's html content and return a cheerio Object
 
+# Setup
+
+	$ npm install url-dom
+
+# Usage
+
+```javascript
+var dom = require('url-dom');
+
+dom('http://ke.qq.com').on('done', function ($) {
+	// This is a cheerio instance
+	console.log($);
+}).on('fail', function (why) {
+	console.log(why);
+});
+```
+
 ## License
 (The MIT License)
 
