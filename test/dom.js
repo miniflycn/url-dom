@@ -26,4 +26,18 @@ describe('dom', function () {
       done();
     });
   });
+
+  it('should able to use done event', function (done) {
+    dom('http://127.0.0.1:7777/test').on('done', function ($) {
+      $().cheerio.should.equal('[cheerio object]');
+      done();
+    });
+  });
+
+  it('should able to use close event', function (done) {
+    dom('http://127.0.0.1:7777/test').on('close', function (code) {
+      code.should.equal(0);
+      done();
+    });
+  });
 });
